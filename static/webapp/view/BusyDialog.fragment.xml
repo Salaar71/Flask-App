@@ -1,0 +1,7 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<BusyDialog
+		title="Initiating Workflow"
+		text="Plese wait. Processing your request..."/>
+</core:FragmentDefinition>

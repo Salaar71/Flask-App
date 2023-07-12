@@ -1,0 +1,65 @@
+<View controllerName="webapp.view.main" xmlns="sap.m" xmlns:f="sap.ui.layout.form" xmlns:micro="sap.suite.ui.microchart" xmlns:mvc="sap.ui.core.mvc" xmlns:c="sap.ui.commons" displayBlock="true">
+	<App>
+		<pages>
+			<Page title="Flask REST Service Call Demo">
+				<content>
+					<Table class="sapUiSizeCompact" id="tblWorkflowList" items="{path: 'empModel1>/'}">
+						<headerToolbar>
+							<OverflowToolbar>
+								<content>
+									<Title text="List of employees" />
+								</content>
+							</OverflowToolbar>
+						</headerToolbar>
+						<columns>
+							<Column>
+								<Text text="Employee ID" />
+							</Column>
+							<Column>
+								<Text text="First Name" />
+							</Column>
+							<Column minScreenWidth="Tablet" demandPopin="true">
+								<Text text="Last Name" />
+							</Column>
+							<Column minScreenWidth="Desktop" demandPopin="true">
+								<Text text="Gender" />
+							</Column>
+							<Column minScreenWidth="Desktop" demandPopin="true">
+								<Text text="Salary" />
+							</Column>
+							<Column minScreenWidth="Desktop" demandPopin="true">
+								<Text text="Branch ID" />
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem vAlign="Middle">
+								<cells>
+									<Label text="{empModel1>emp_id}" />
+								</cells>
+								<cells>
+									<Label text="{empModel1>first_name}" />
+								</cells>
+								<cells>
+									<Label text="{empModel1>last_name}" />
+								</cells>
+								<cells>
+									<Label text="{empModel1>gender}" />
+								</cells>
+								<cells>
+									<Label text="{empModel1>salary}" />
+								</cells>
+								<cells>
+									<Label text="{empModel1>branch_id}" />
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</content>
+				<footer>
+					<Toolbar>
+					</Toolbar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</View>
